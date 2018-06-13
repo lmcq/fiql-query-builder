@@ -14,12 +14,8 @@ import {
   InNode,
   NotInNode,
 } from './tree';
-import {
-  keyConstants
-} from './constants';
-import {
-  InvalidRootError
-} from './exception';
+import { keyConstants } from './constants';
+import { InvalidRootError } from './exception';
 
 /**
  * Recursively traverse tree to build query parameter
