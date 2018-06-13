@@ -57,9 +57,9 @@ const convertToNode = (json) => {
       case keyConstants.LESS_THAN:
         return new LtNode(convertToNode(v.selector), convertToNode(v.args));
       case keyConstants.GREATER_THAN:
-        return new GeNode(convertToNode(v.selector), convertToNode(v.args));
-      case keyConstants.GREATER_THAN_OR_EQUAL:
         return new GtNode(convertToNode(v.selector), convertToNode(v.args));
+      case keyConstants.GREATER_THAN_OR_EQUAL:
+        return new GeNode(convertToNode(v.selector), convertToNode(v.args));
       case keyConstants.IN:
         return new InNode(convertToNode(v.selector), convertToNode(v.args));
       case keyConstants.OUT:

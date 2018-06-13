@@ -17,6 +17,42 @@ const validNeqOperator = {
     args: "test1"
   }
 };
+const validLtOperator = {
+  less_than : {
+    selector: "test",
+    args: "test"
+  }
+};
+const validLeOperator = {
+  less_than_or_equal : {
+    selector: "test",
+    args: "test"
+  }
+};
+const validGtOperator = {
+  greater_than : {
+    selector: "test",
+    args: "test"
+  }
+};
+const validGeOperator = {
+  greater_than_or_equal : {
+    selector: "test",
+    args: "test"
+  }
+};
+const validInOperator = {
+  in : {
+    selector: "test",
+    args: "test"
+  }
+};
+const validOutOperator = {
+  out: {
+    selector: "test",
+    args: "test"
+  }
+};
 const validCustomOperator = {
   custom_operator: {
     operator: "~",
@@ -32,7 +68,7 @@ const validCustomExpression = {
       not_equals: validNeqOperator.not_equals
     }
   }
-}
+};
 const validAndExp = {
   and: [{
       equals: validEqOperator.equals
@@ -82,6 +118,55 @@ describe('Inequality (Json)', () => {
     assert.equal(result, validStr, `Invalid eq string`)
   });
 });
+
+describe('Less Than (Json)', () => {
+  const validStr = "test=lt=test";
+  it(`should equal ${validStr}`, () => {
+    const result = convertFromJson(validLtOperator);
+    assert.equal(result, validStr, `Invalid eq string`)
+  });
+});
+
+describe('Less Than Or Equal (Json)', () => {
+  const validStr = "test=le=test";
+  it(`should equal ${validStr}`, () => {
+    const result = convertFromJson(validLeOperator);
+    assert.equal(result, validStr, `Invalid eq string`)
+  });
+});
+
+describe('Greater Than (Json)', () => {
+  const validStr = "test=gt=test";
+  it(`should equal ${validStr}`, () => {
+    const result = convertFromJson(validGtOperator);
+    assert.equal(result, validStr, `Invalid eq string`)
+  });
+});
+
+describe('Greater Than Or Equal (Json)', () => {
+  const validStr = "test=ge=test";
+  it(`should equal ${validStr}`, () => {
+    const result = convertFromJson(validGeOperator);
+    assert.equal(result, validStr, `Invalid eq string`)
+  });
+});
+
+describe('In (Json)', () => {
+  const validStr = "test=in=test";
+  it(`should equal ${validStr}`, () => {
+    const result = convertFromJson(validInOperator);
+    assert.equal(result, validStr, `Invalid eq string`)
+  });
+});
+
+describe('Out (Json)', () => {
+  const validStr = "test=out=test";
+  it(`should equal ${validStr}`, () => {
+    const result = convertFromJson(validOutOperator);
+    assert.equal(result, validStr, `Invalid eq string`)
+  });
+});
+
 
 describe('Custom Operator (Json)', () => {
   const validStr = "test2~test2";
