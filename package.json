@@ -1,6 +1,6 @@
 {
   "name": "fiql-param-builder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This module provides the utility to generate valid FIQL query strings by using a JSON objects or the custom classes provided.",
   "main": "./lib/index.js",
   "scripts": {
@@ -23,11 +23,14 @@
     "url": "git+https://github.com/lmcq/fiql-query-builder.git"
   },
   "keywords": [
-    "boilerplate",
-    "npm",
-    "module",
-    "node",
-    "javascript"
+    "fiql",
+    "json2fiql",
+    "rsql",
+    "javscript",
+    "restful",
+    "rest query",
+    "encode",
+    "json to fiql"
   ],
   "author": "Lewis dev.lmcq@gmail.com",
   "license": "MIT",
