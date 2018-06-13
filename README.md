@@ -303,4 +303,4 @@ var groupNode = convertFromNode(
 
 ## License
 
-This project is licences under [MIT License](LICENCE)
+This project is licensed under [MIT License](LICENCE)
