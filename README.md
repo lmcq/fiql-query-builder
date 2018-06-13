@@ -1,6 +1,7 @@
 # FIQL Query Builder
 
 [![Build Status](https://travis-ci.org/lmcq/fiql-query-builder.svg?branch=master)](https://travis-ci.org/lmcq/fiql-query-builder)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/81108b6e120c4c36b490fc427c620cd8)](https://www.codacy.com/app/lmcq/fiql-query-builder?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=lmcq/fiql-query-builder&amp;utm_campaign=Badge_Grade)
 
 ## Overview
 
