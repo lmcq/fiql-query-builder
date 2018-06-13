@@ -301,6 +301,6 @@ var groupNode = convertFromNode(
 // groupNode equals: k==(foo=lt=bar,baz!=qux)
 ```
 
-## Licence
+## License
 
-See [Licence](LICENCE)
+This project is licences under [MIT License](LICENCE)
