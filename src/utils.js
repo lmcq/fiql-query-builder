@@ -19,7 +19,7 @@ import { InvalidRootError } from './exception';
 
 /**
  * Recursively traverse tree to build query parameter
- * @param {RsqlNode} node The root node
+ * @param {FiqlNode} node The root node
  */
 export const convertFromNode = (node) => {
   // If the node is a boolean or operator, traverse
@@ -31,12 +31,12 @@ export const convertFromNode = (node) => {
 };
 
 /**
- * Recursively trave JSON object and convert to RsqlNode
- * @param {Object} json JSON representation of RSQL query
+ * Recursively trave JSON object and convert to FiqlNode
+ * @param {Object} json JSON representation of FIQL query
  */
 const convertToNode = (json) => {
   /**
-   * Produce RsqlNode based on key of JSON object
+   * Produce FiqlNode based on key of JSON object
    * @param {String} k The key of the JSON object
    * @param {Object} v The value of the JSON object
    */
@@ -96,7 +96,7 @@ const convertToNode = (json) => {
 };
 
 /**
- * Converts a JSON object to a RsqlNode then to a query string
+ * Converts a JSON object to a FiqlNode then to a query string
  * @param {Object} json JSON Object to convert
  */
 export const convertFromJson = (json) => {

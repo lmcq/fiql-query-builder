@@ -9,7 +9,7 @@ export class OpNode {
      * Initialises operator node
      * @param {string} selector The operator selector (left-side)
      * @param {string} operator The operator (==, !=, etc.)
-     * @param {RsqlNode} args Argument for operator (right-side)
+     * @param {FiqlNode} args Argument for operator (right-side)
      */
   constructor(selector, operator, args) {
     this.selector = selector;

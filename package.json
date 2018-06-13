@@ -1,7 +1,7 @@
 {
-  "name": "rsql-param-builder",
+  "name": "fiql-param-builder",
   "version": "1.0.0",
-  "description": "Boilerplate for npm modules.",
+  "description": "This module provides the utility to generate valid FIQL query strings by using a JSON objects or the custom classes provided.",
   "main": "./lib/index.js",
   "scripts": {
     "clean": "rimraf lib coverage",
@@ -20,7 +20,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Travelport-Ukraine/npm-module-boilerplate.git"
+    "url": "git+https://github.com/lmcq/fiql-query-builder.git"
   },
   "keywords": [
     "boilerplate",
@@ -32,9 +32,9 @@
   "author": "Lewis dev.lmcq@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Travelport-Ukraine/npm-module-boilerplate/issues"
+    "url": "hhttps://github.com/lmcq/fiql-query-builder/issues"
   },
-  "homepage": "https://github.com/Travelport-Ukraine/npm-module-boilerplate#readme",
+  "homepage": "https://github.com/lmcq/fiql-query-builder#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.1",

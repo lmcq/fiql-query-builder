@@ -7,7 +7,7 @@ import { GroupNode, OpNode } from './';
 export class ExpNode {
   /**
    * Initialise the node
-   * @param {RsqlNode[]} children A list of child nodes to evaulate
+   * @param {FiqlNode[]} children A list of child nodes to evaulate
    * @param {String} operator The boolean operator (e.g. and, or)
    */
   constructor(operator, children) {
