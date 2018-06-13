@@ -14,8 +14,12 @@ import {
   InNode,
   NotInNode,
 } from './tree';
-import { keyConstants } from './constants';
-import { InvalidRootError } from './exception';
+import {
+  keyConstants
+} from './constants';
+import {
+  InvalidRootError
+} from './exception';
 
 /**
  * Recursively traverse tree to build query parameter
@@ -81,12 +85,7 @@ const convertToNode = (json) => {
   // Recursively traverse object until value hit, then
   // produce a leaf node
   if (json instanceof Object) {
-    const children = Object.keys(json).map((k) => {
-      if (Object.prototype.hasOwnProperty.call(json, k)) {
-        return handleKey(k, json[k]);
-      }
-      return json[k];
-    });
+    const children = Object.keys(json).map(k => handleKey(k, json[k]));
     if (children.length === 1) {
       return children[0];
     }
