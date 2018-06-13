@@ -298,6 +298,6 @@ var groupNode = convertFromNode(
 // groupNode equals: k==(foo=lt=bar,baz!=qux)
 ```
 
-## License
+## Licence
 
-See [LICENSE]
+See [Licence](LICENCE)
