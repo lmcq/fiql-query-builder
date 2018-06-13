@@ -44,7 +44,7 @@ convertFromJson(json);
 | not_equals               | <ul><li><b>selector {String} (required)</b></li><li><b>args {Object \| String} (required)</b>)</li></ul>     | Produces an inequality operator (`!=`)                |
 | less_than                | <ul><li><b>selector {String} (required)</b></li><li><b>args {Object \| String} (required)</b></li></ul>      | Produces an less than operator (`=lt=`)               |
 | less_than_or_equal       | <ul><li><b>selector {String} (required)</b></li><li><b>args {Object \| String} (required)</b></li></ul>      | Produces an less than or equal operator (`=le=`)      |
-| greater_than             | <ul><li><b>selector {String} (required)</b></li><li><b>args {Object \| String} (required)</b</li></ul>       | Produces an greater operator (`=gt=`)                 |
+| greater_than             | <ul><li><b>selector {String} (required)</b></li><li><b>args {Object \| String} (required)</b></li></ul>       | Produces an greater operator (`=gt=`)                 |
 | greater_than_or_equal    | <ul><li><b>selector {String} (required)</b></li><li><b>args {Object \| String} (required)</b></li></ul>      | Produces an greater than or equal operator (`=ge=`)   |
 | in                       | <ul><li><b>selector {String} (required)</b></li><li><b>args {Object \| String} (required)</b></li></ul>      | Produces an in operator (`in`)                        |
 | out                      | <ul><li><b>selector {String} (required)</b></li><li><b>args {Object \| String} (required)</b></li></ul>      | Produces an out operator (`out`)                      |
@@ -53,7 +53,7 @@ convertFromJson(json);
 
 | Object Key               | Children                                                                                                     | Description                                           | 
 | ------------------------ | ------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------- |
-| custom_expression        | <li><b>operator {String} (required)</b> - The custom operator</li><li><b>children {Object[]}</b> - The children for the expression</li></ul>                      | Define a custom boolean expression                  |
+| custom_expression        | <ul><li><b>operator {String} (required)</b> - The custom operator</li><li><b>children {Object[]}</b> - The children for the expression</li></ul>                      | Define a custom boolean expression                  |
 | and                      | <ul><li><b>_ {Object[]} (required)</b></li></ul>                                                             | Combines child array with an and operator (`;`)       |
 | or                       | <ul><li><b>_ {Object[]} (required)</b></li></ul>                                                             | Combines child array with an or operator (`,`)        |
 

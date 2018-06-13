@@ -1,6 +1,6 @@
 {
   "name": "fiql-query-builder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This module provides the utility to generate valid FIQL query strings by using a JSON objects or the custom classes provided.",
   "main": "./lib/index.js",
   "scripts": {
