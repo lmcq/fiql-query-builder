@@ -1,5 +1,7 @@
 # FIQL Query Builder
 
+[![Build Status](https://travis-ci.org/lmcq/fiql-query-builder.svg?branch=master)](https://travis-ci.org/lmcq/fiql-query-builder)
+
 ## Overview
 
 [Feed Item Query Language](https://tools.ietf.org/html/draft-nottingham-atompub-fiql-00) (FIQL) is a simple, URI-friendly query language for filtering entries of web feeds.
