@@ -70,7 +70,7 @@ convertFromJson(json);
 
 // Using require()
 var fiqlQueryBuilder = require('fiql-query-builder');
-fiqlQueryBuilder.convertFromNode(json);
+fiqlQueryBuilder.convertFromNode(node);
 
 // Using ES6 import
 import { convertFromNode, EqNode, AndNode, OpNode } from 'fiql-query-builder';
