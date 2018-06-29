@@ -1,5 +1,11 @@
-import { InvalidExpressionChildError } from '../exception';
-import { GroupNode, OpNode } from './';
+import {
+  InvalidExpressionChildError
+} from '../exception';
+import {
+  GroupNode,
+  OpNode,
+  LeafNode
+} from './';
 
 /**
  * Generic boolean expression node
@@ -21,10 +27,13 @@ export class ExpNode {
     }
     // Recursively build children and then join using the operator
     return `${this.children.map((child) => {
-      if (child instanceof OpNode || child instanceof ExpNode || child instanceof GroupNode) {
+      if (child instanceof OpNode
+         || child instanceof ExpNode
+         || child instanceof GroupNode
+         || child instanceof LeafNode) {
         return child.build();
       }
-      throw new InvalidExpressionChildError('Boolean expression child must be operators or (grouped) boolean expression.');
+      throw new InvalidExpressionChildError('Boolean expression child must be operators, values or (grouped) boolean expression.');
     }).join(this.operator)}`;
   }
 }

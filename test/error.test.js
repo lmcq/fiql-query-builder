@@ -58,7 +58,7 @@ describe('Invalid selector type (Error)', () => {
 
 describe('Invalid expression child (Error)', () => {
   it(`should throw InvalidExpressionChildError`, () => {
-    assert.throws(() => convertFromJson(invalidExpChild), InvalidExpressionChildError, `Boolean expression child must be operators or (grouped) boolean expression.`)
+    assert.throws(() => convertFromJson(invalidExpChild), InvalidExpressionChildError, `Boolean expression child must be operators, values or (grouped) boolean expression.`)
   });
 });
 

@@ -18,31 +18,30 @@ const validNeqOperator = {
   }
 };
 const validLtOperator = {
-  less_than : {
+  less_than: {
     selector: "test",
     args: "test"
   }
 };
 const validLeOperator = {
-  less_than_or_equal : {
+  less_than_or_equal: {
     selector: "test",
     args: "test"
   }
 };
 const validGtOperator = {
-  greater_than : {
+  greater_than: {
     selector: "test",
     args: "test"
   }
 };
 const validGeOperator = {
-  greater_than_or_equal : {
+  greater_than_or_equal: {
     selector: "test",
     args: "test"
   }
 };
-const validInOperator = {
-  in : {
+const validInOperator = { in: {
     selector: "test",
     args: "test"
   }
@@ -87,6 +86,18 @@ const validOrExp = {
     }
   ]
 };
+
+const validEqOr = {
+  equals: {
+    selector: "test",
+    args: {
+      group: {
+        or: [1, 2, 3]
+      }
+    }
+  }
+}
+
 const validGroup = {
   group: validAndExp
 };
@@ -214,5 +225,13 @@ describe('Nested Expression (Json)', () => {
   it(`should equal ${validStr}`, () => {
     const result = convertFromJson(validNestedExpression);
     assert.equal(result, validStr, `Invalid group`)
+  });
+})
+
+describe('Equality or children (Json)', () => {
+  const validStr = "test==(1,2,3)";
+  it(`should equal ${validStr}`, () => {
+    const result = convertFromJson(validEqOr);
+    assert.equal(result, validStr, `Invalid eq or`)
   });
 })
