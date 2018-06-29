@@ -1,10 +1,8 @@
-import {
-  InvalidExpressionChildError
-} from '../exception';
+import { InvalidExpressionChildError } from '../exception';
 import {
   GroupNode,
   OpNode,
-  LeafNode
+  LeafNode,
 } from './';
 
 /**
