@@ -1,6 +1,6 @@
 {
   "name": "fiql-query-builder",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "This module provides the utility to generate valid FIQL query strings by using a JSON objects or the custom classes provided.",
   "main": "./lib/index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "cover": "cross-env BABEL_ENV=commonjs istanbul cover _mocha -- --require babel-core/register --recursive",
     "lint": "eslint src test",
     "lint:watch": "esw -w test src",
-    "build": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
+    "build": "cross-env BABEL_ENV=commonjs babel src --out-dir lib --presets babel-preset-env",
     "test-with-coverage": "cross-env BABEL_ENV=commonjs istanbul cover _mocha -- --require babel-core/register --recursive && cat ./coverage/lcov.info | codacy-coverage && rm -rf ./coverage",
     "prepublish": "npm run clean && npm run lint && npm run test-with-coverage && npm run build"
   },
@@ -36,7 +36,7 @@
   "author": "Lewis dev.lmcq@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "hhttps://github.com/lmcq/fiql-query-builder/issues"
+    "url": "https://github.com/lmcq/fiql-query-builder/issues"
   },
   "homepage": "https://github.com/lmcq/fiql-query-builder#readme",
   "devDependencies": {
